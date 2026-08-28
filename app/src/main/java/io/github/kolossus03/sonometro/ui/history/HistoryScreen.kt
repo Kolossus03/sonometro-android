@@ -14,10 +14,10 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.rounded.VolumeUp
 import androidx.compose.material.icons.rounded.ChevronLeft
 import androidx.compose.material.icons.rounded.ChevronRight
 import androidx.compose.material.icons.rounded.NightsStay
-import androidx.compose.material.icons.rounded.VolumeUp
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -273,7 +273,7 @@ private fun WindowAdvice(quietest: HourStat?, noisiest: HourStat?, unit: String,
 @Composable
 private fun PeakEventsHeader(count: Int, limit: Double, unit: String) {
     Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(top = 4.dp)) {
-        Icon(Icons.Rounded.VolumeUp, null, Modifier.size(18.dp))
+        Icon(Icons.AutoMirrored.Rounded.VolumeUp, null, Modifier.size(18.dp))
         Spacer(Modifier.width(8.dp))
         Column {
             Text("Eventos de pico", style = MaterialTheme.typography.titleSmall)
